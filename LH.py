@@ -121,8 +121,8 @@ def dofetch(id, key, region):
                 r = requests.get(msgUrl)
                 print r.status_code
                 print r.content
-                response= requests.get(url=msgUrl)
-                print (response)        
+                #response= requests.get(url=msgUrl)
+                #print (response)        
         else:
             gaojinSatus="流量告警状态：已关机!"
             print("已关机")
