@@ -2,6 +2,7 @@ import json
 import time
 import requests
 import os
+import requests
 from tencentcloud.common import credential
 from tencentcloud.common.profile.client_profile import ClientProfile
 from tencentcloud.common.profile.http_profile import HttpProfile
