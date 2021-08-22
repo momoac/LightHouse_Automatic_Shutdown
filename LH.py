@@ -114,7 +114,7 @@ def dofetch(id, key, region):
                 print(resp_Stop.to_json_string())
                 #添加TG酱通知
                 msgContent= InstanceId+ " ：流量超出限制，即将自动关机。" + "剩余流量：" + TrafficPackageRemaining+ "GB"
-                msgUrl="https://tgbot-red.vercel.app/api?token="+ tgToken +"&message="+ msgContent
+                msgUrl="https://api.telegram.org/bot1737507586:AAG-JXpVzPLDG3vQWAaCX0_SJfZPMPS1WbU/sendMessage?chat_id=1095779157&text="+ msgContent
                 #告警结果：
                 gaojinResult="流量告警结果：流量超出限制，即将自动关机。\n"+"剩余流量：" + str(TrafficPackageRemaining)+ "GB"
                 response= requests.get(url=msgUrl)
